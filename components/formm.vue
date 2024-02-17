@@ -27,7 +27,7 @@ const items = ["Item 1", "Item 2", "Item 3", "Item 4"];
 
 <template>
   <form>
-    <v-card title="Card title" class="pa-2"  subtitle="Subtitle" text="...">
+    <v-card title="Card title" class="pa-2" color="#f3f6fd"  subtitle="Subtitle" text="...">
       
       <div class="" >
         <v-text-field v-model="state.name" :counter="10" label="Name" required></v-text-field>
@@ -37,6 +37,7 @@ const items = ["Item 1", "Item 2", "Item 3", "Item 4"];
         <v-select v-model="state.select" :items="items" label="Item" required></v-select>
   
         <v-checkbox v-model="state.checkbox" label="Do you agree?" required></v-checkbox>
+      
       </div>
 
       <v-card-actions>
