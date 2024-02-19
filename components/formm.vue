@@ -26,25 +26,29 @@ const items = ["Item 1", "Item 2", "Item 3", "Item 4"];
 </script>
 
 <template>
-  <form>
-    <v-card title="Card title" class="pa-2" color="#f3f6fd"  subtitle="Subtitle" text="...">
+  <form class="font-samim " >
+    <v-card title="ربات جدید" class="pa-2" color="#f3f6fd"  subtitle="ربات ها امکان لورم اپسوم را فراهم میکنند" text="">
       
       <div class="" >
-        <v-text-field v-model="state.name" :counter="10" label="Name" required></v-text-field>
+        <v-text-field v-model="state.name" :counter="10" label="نام" required></v-text-field>
   
-        <v-text-field v-model="state.email" label="E-mail" required></v-text-field>
+        <v-text-field v-model="state.email" label="پست الکترونیک" required></v-text-field>
   
-        <v-select v-model="state.select" :items="items" label="Item" required></v-select>
+        <v-select v-model="state.select" :items="items" label="ایتم سمپل" required></v-select>
   
         <v-checkbox v-model="state.checkbox" label="Do you agree?" required></v-checkbox>
-      
+      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت 
+      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت 
+      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت 
+      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت 
+      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت 
+      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت 
       </div>
 
-      <v-card-actions>
-        <v-btn class="me-4"> submit </v-btn>
-        <v-btn @click="clear"> clear </v-btn>
-        <v-btn>Click me</v-btn>
-      </v-card-actions>
+      <VCardActions  >
+        <v-btn class="me-4"> ثبت </v-btn>
+        <v-btn > پاک کردن </v-btn>
+      </VCardActions>
     </v-card>
   </form>
 </template>

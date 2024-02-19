@@ -4,16 +4,7 @@ import { ref } from "vue";
 const order = ref(0);
 
 const open = ref(["Users"]);
-const admins = ref([
-  ["Management", "mdi-account-multiple-outline"],
-  ["Settings", "mdi-cog-outline"],
-]);
-const cruds = ref([
-  ["Create", "mdi-plus-outline"],
-  ["Read", "mdi-file-outline"],
-  ["Update", "mdi-update"],
-  ["Delete", "mdi-delete"],
-]);
+
 
 const fav = ref(true),
   menu = ref(false),
@@ -50,7 +41,7 @@ const menuContent = ref([
 </script>
 
 <template>
-  <v-layout class="rounded rounded-md">
+  <v-layout class="">
     <vNavigationDrawer  location="left" color="light-blue-darken-4" permanent expand-on-hover rail>
       <v-list>
         <v-list-item @click="menu = !menu" prepend-avatar="https://randomuser.me/api/portraits/women/85.jpg"
@@ -107,7 +98,7 @@ const menuContent = ref([
       </v-list>
     </vNavigationDrawer>
 
-    <v-navigation-drawer location="right" color="" permanent rail>
+    <v-navigation-drawer location="right"  permanent rail  >
       <v-list density="comfortable" nav :color="'light-blue-darken-4'">
         <v-list-item prepend-icon="mdi-view-dashboard" title="dashboard" value="dashboard"></v-list-item>
         <v-list-item prepend-icon="mdi-star" title="Starred" value="starred"></v-list-item>
@@ -195,7 +186,7 @@ const menuContent = ref([
         <v-breadcrumbs bg-color="grey-lighten-5" :items="['Foo', 'Bar', 'Fizz']"></v-breadcrumbs>
         <VContainer>
           <VRow>
-            <VCol cols="6">
+            <VCol cols="12" class="mx-auto" md="8" lg="6" >
               <Formm />
             </VCol>
           </VRow>
